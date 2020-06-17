@@ -105,6 +105,7 @@
             <excludeRoot>target/generated-sources/stubs</excludeRoot>
           </excludeRoots>
         </configuration>
+       </plugin>
        <plugin>
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-site-plugin</artifactId>
