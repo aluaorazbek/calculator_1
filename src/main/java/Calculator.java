@@ -94,10 +94,10 @@ public class Calculator {
             return Math.sin(num);
         }
         if (newMode == MonoOperatorModes.tan) {
-            if (num == 0 || num % 180 == 0) {
+            if (num == 0 || num % java.lang.Math.PI == 0) {
                 return 0.0;
             }
-            if (num % 90 == 0 && num % 180 != 0) {
+            if ((num * 180 / java.lang.Math.PI) % 90 == 0 && (num * 180 / java.lang.Math.PI) % 180 != 0) {
                 return NaN;
             }
 
