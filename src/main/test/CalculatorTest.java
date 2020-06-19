@@ -68,56 +68,56 @@ public class CalculatorTest {
     @Test
     public void CalculateMonoSquareTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(16.0, tester.calculateMono(Calculator.MonoOperatorModes.square, 4.0));
+        Assertions.assertEquals(16.0, tester.calculateMono(Calculator.MonoOperatorModes.SQUARE, 4.0));
     }
 
     @Test
     public void CalculateMonoSquareRootTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.squareRoot, 9.0));
+        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.SQUAREROOT, 9.0));
     }
 
     @Test
     public void CalculateMonoOneDIVIDEdByTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(0.01, tester.calculateMono(Calculator.MonoOperatorModes.oneDevidedBy, 100.0));
+        Assertions.assertEquals(0.01, tester.calculateMono(Calculator.MonoOperatorModes.ONEDIVIDEDBY, 100.0));
     }
 
     @Test
     public void CalculateMonoSinTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(0.5, tester.calculateMono(Calculator.MonoOperatorModes.sin, java.lang.Math.PI / 6), 0.0000000001);
+        Assertions.assertEquals(0.5, tester.calculateMono(Calculator.MonoOperatorModes.SIN, java.lang.Math.PI / 6), 0.0000000001);
     }
 
     @Test
     public void CalculateMonoCosTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(0.5, tester.calculateMono(Calculator.MonoOperatorModes.cos, java.lang.Math.PI / 3), 0.0000000001);
+        Assertions.assertEquals(0.5, tester.calculateMono(Calculator.MonoOperatorModes.COS, java.lang.Math.PI / 3), 0.0000000001);
     }
 
     @Test
     public void CalculateMonoTanTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(1.0, tester.calculateMono(Calculator.MonoOperatorModes.tan, java.lang.Math.PI / 4), 0.0000000001);
+        Assertions.assertEquals(1.0, tester.calculateMono(Calculator.MonoOperatorModes.TAN, java.lang.Math.PI / 4), 0.0000000001);
     }
 
     @Test
     public void CalculateMonoLogTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.log, 1000.0));
+        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.LOG, 1000.0));
     }
 
     @Test
     public void CalculateMonoRateTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(.75, tester.calculateMono(Calculator.MonoOperatorModes.rate, 75.0));
+        Assertions.assertEquals(.75, tester.calculateMono(Calculator.MonoOperatorModes.RATE, 75.0));
     }
 
     @Test
     public void CalculateMonoAbsTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.abs, -3.0));
-        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.abs, 3.0));
+        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.ABS, -3.0));
+        Assertions.assertEquals(3.0, tester.calculateMono(Calculator.MonoOperatorModes.ABS, 3.0));
     }
 
     @Test
@@ -130,25 +130,25 @@ public class CalculatorTest {
     @Test
     public void CalculateMonoTanZeroTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(0.0, tester.calculateMono(Calculator.MonoOperatorModes.tan, 0.0), 0.0000000001);
+        Assertions.assertEquals(0.0, tester.calculateMono(Calculator.MonoOperatorModes.TAN, 0.0), 0.0000000001);
     }
 
     @Test
     public void CalculateMonoTanPiTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(0.0, tester.calculateMono(Calculator.MonoOperatorModes.tan, java.lang.Math.PI), 0.0000000001);
+        Assertions.assertEquals(0.0, tester.calculateMono(Calculator.MonoOperatorModes.TAN, java.lang.Math.PI), 0.0000000001);
     }
 
     @Test
     public void CalculateMonoTan180Test() {
         Calculator tester = new Calculator();
         Assertions.assertEquals(1.3386902103
-                , tester.calculateMono(Calculator.MonoOperatorModes.tan, 180.0), 0.0000000001);
+                , tester.calculateMono(Calculator.MonoOperatorModes.TAN, 180.0), 0.0000000001);
     }
 
     @Test
     public void CalculateMonoTanHalfPiTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(NaN, tester.calculateMono(Calculator.MonoOperatorModes.tan, java.lang.Math.PI/2), 0.0000000001);
+        Assertions.assertEquals(NaN, tester.calculateMono(Calculator.MonoOperatorModes.TAN, java.lang.Math.PI/2), 0.0000000001);
     }
 }
