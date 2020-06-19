@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public enum MonoOperatorModes {
-        square, squareRoot, oneDevidedBy, cos, sin, tan ,log , rate, abs
+        SQUARE, SQUAREROOT, ONEDIVIDEDBY, COS, SIN, TAN ,LOG , RATE, ABS
     }
 
     private Double num1, num2;
@@ -78,22 +78,22 @@ public class Calculator {
     }
 
     public Double calculateMono(MonoOperatorModes newMode, Double num) {
-        if (newMode == MonoOperatorModes.square) {
+        if (newMode == MonoOperatorModes.SQUARE) {
             return num * num;
         }
-        if (newMode == MonoOperatorModes.squareRoot) {
+        if (newMode == MonoOperatorModes.SQUAREROOT) {
             return Math.sqrt(num);
         }
-        if (newMode == MonoOperatorModes.oneDevidedBy) {
+        if (newMode == MonoOperatorModes.ONEDIVIDEDBY) {
             return 1 / num;
         }
-        if (newMode == MonoOperatorModes.cos) {
+        if (newMode == MonoOperatorModes.COS) {
             return Math.cos(num);
         }
-        if (newMode == MonoOperatorModes.sin) {
+        if (newMode == MonoOperatorModes.SIN) {
             return Math.sin(num);
         }
-        if (newMode == MonoOperatorModes.tan) {
+        if (newMode == MonoOperatorModes.TAN) {
             if (num == 0 || num % java.lang.Math.PI == 0) {
                 return 0.0;
             }
@@ -103,13 +103,13 @@ public class Calculator {
 
             return Math.tan(num);
         }
-        if (newMode == MonoOperatorModes.log) {
+        if (newMode == MonoOperatorModes.LOG) {
             return log10(num);
         }
-        if (newMode == MonoOperatorModes.rate) {
+        if (newMode == MonoOperatorModes.RATE) {
            return num / 100;
         }
-        if (newMode == MonoOperatorModes.abs){
+        if (newMode == MonoOperatorModes.ABS){
             return Math.abs(num);
         }
 
