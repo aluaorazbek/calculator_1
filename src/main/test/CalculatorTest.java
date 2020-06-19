@@ -8,60 +8,60 @@ import static org.junit.Assert.*;
 public class CalculatorTest {
 
     @Test
-    public void calculateBiNormalTest() {
+    public void calculateBiNORMALTest() {
         Calculator tester = new Calculator();
-        Assertions.assertEquals(NaN, tester.calculateBi(Calculator.BiOperatorModes.normal, 7.0));
+        Assertions.assertEquals(NaN, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 7.0));
     }
 
     @Test
-    public void calculateBiAddTest() {
+    public void calculateBiADDTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.add, 5.1);
-        Assertions.assertEquals(8.4, tester.calculateBi(Calculator.BiOperatorModes.normal, 3.3));
+        tester.calculateBi(Calculator.BiOperatorModes.ADD, 5.1);
+        Assertions.assertEquals(8.4, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 3.3));
     }
 
     @Test
-    public void calculateBiMinusTest() {
+    public void calculateBiMINUSTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.minus, 9.0);
-        Assertions.assertEquals(6.8, tester.calculateBi(Calculator.BiOperatorModes.normal, 2.2));
+        tester.calculateBi(Calculator.BiOperatorModes.MINUS, 9.0);
+        Assertions.assertEquals(6.8, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 2.2));
     }
 
     @Test
-    public void calculateBiMultiplyTest() {
+    public void calculateBiMULTIPLYTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.multiply, 3.2);
-        Assertions.assertEquals(6.4, tester.calculateBi(Calculator.BiOperatorModes.normal, 2.0));
+        tester.calculateBi(Calculator.BiOperatorModes.MULTIPLY, 3.2);
+        Assertions.assertEquals(6.4, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 2.0));
     }
 
     @Test
-    public void calculateBiDivideTest() {
+    public void calculateBiDIVIDETest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.divide, 5.4);
-        Assertions.assertEquals(0.9, tester.calculateBi(Calculator.BiOperatorModes.normal, 6.0));
+        tester.calculateBi(Calculator.BiOperatorModes.DIVIDE, 5.4);
+        Assertions.assertEquals(0.9, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 6.0));
     }
 
     @Test
-    public void calculateBiXPowerOfYTest() {
+    public void calculateBiXPOWEROFYTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.xpowerofy, 2.0);
-        Assertions.assertEquals(16.0, tester.calculateBi(Calculator.BiOperatorModes.normal, 4.0));
+        tester.calculateBi(Calculator.BiOperatorModes.XPOWEROFY, 2.0);
+        Assertions.assertEquals(16.0, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 4.0));
     }
 
 
     @Test
     public void calculateEqualTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.add, 3.0);
-        tester.calculateBi(Calculator.BiOperatorModes.add, 1.0);
+        tester.calculateBi(Calculator.BiOperatorModes.ADD, 3.0);
+        tester.calculateBi(Calculator.BiOperatorModes.ADD, 1.0);
         Assertions.assertEquals(6.0, tester.calculateEqual(2.0));
     }
 
     @Test
     public void resetTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.add, 5.0);
-        Assertions.assertEquals(8.8, tester.calculateBi(Calculator.BiOperatorModes.add, 3.8));
+        tester.calculateBi(Calculator.BiOperatorModes.ADD, 5.0);
+        Assertions.assertEquals(8.8, tester.calculateBi(Calculator.BiOperatorModes.ADD, 3.8));
         Assertions.assertEquals(NaN, tester.reset());
     }
 
@@ -78,7 +78,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void CalculateMonoOneDividedByTest() {
+    public void CalculateMonoOneDIVIDEdByTest() {
         Calculator tester = new Calculator();
         Assertions.assertEquals(0.01, tester.calculateMono(Calculator.MonoOperatorModes.oneDevidedBy, 100.0));
     }
@@ -121,10 +121,10 @@ public class CalculatorTest {
     }
 
     @Test
-    public void calculateBiAddZeroTest() {
+    public void calculateBiADDZeroTest() {
         Calculator tester = new Calculator();
-        tester.calculateBi(Calculator.BiOperatorModes.add, 0.0);
-        Assertions.assertEquals(0.0, tester.calculateBi(Calculator.BiOperatorModes.normal, 0.0));
+        tester.calculateBi(Calculator.BiOperatorModes.ADD, 0.0);
+        Assertions.assertEquals(0.0, tester.calculateBi(Calculator.BiOperatorModes.NORMAL, 0.0));
     }
 
     @Test
