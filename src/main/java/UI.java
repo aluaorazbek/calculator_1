@@ -213,25 +213,25 @@ public class UI implements ActionListener {
       }
       
       if (source == butAdd) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.add, reader()));
+         writer(calc.calculateBi(Calculator.BiOperatorModes.ADD, reader()));
       }
       
       if (source == butMinus) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.minus, reader()));
+         writer(calc.calculateBi(Calculator.BiOperatorModes.MINUS, reader()));
       }
       
       if (source == butMultiply) {
-         writer(calc.calculateBi(Calculator.BiOperatorModes.multiply,
+         writer(calc.calculateBi(Calculator.BiOperatorModes.MULTIPLY,
                                  reader()));
       }
       
       if (source == butDivide) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.divide, reader()));
+                   .calculateBi(Calculator.BiOperatorModes.DIVIDE, reader()));
       }
       if (source == butxpowerofy) {
          writer(calc
-                   .calculateBi(Calculator.BiOperatorModes.xpowerofy, reader()));
+                   .calculateBi(Calculator.BiOperatorModes.XPOWEROFY, reader()));
       }
       
       if (source == butSquare) {
