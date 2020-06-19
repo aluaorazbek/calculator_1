@@ -12,8 +12,13 @@ import static java.lang.Math.pow;
 
 public class Calculator {
 
-    public enum BiOperatorModes {
-        normal, add, minus, multiply, divide , xpowerofy 
+    public class BiOperatorModes {
+        public static final int normal = 1;
+        public static final int add = 2;
+        public static final int minus = 3;
+        public static final int multiply = 4;
+        public static final int divide = 5;
+        public static final int xpowerofy = 6;
     }
 
     public enum MonoOperatorModes {
