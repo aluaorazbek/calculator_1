@@ -151,4 +151,4 @@ public class CalculatorTest {
         Calculator tester = new Calculator();
         Assertions.assertEquals(NaN, tester.calculateMono(Calculator.MonoOperatorModes.TAN, java.lang.Math.PI/2), 0.0000000001);
     }
-}
+} 
