@@ -106,11 +106,22 @@
           </excludeRoots>
         </configuration>
        </plugin>
-       <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-         <artifactId>maven-site-plugin</artifactId>
-         <version>3.3.0</version>
-       </plugin>
+            <plugin>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.4</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.github.stephenc.wagon</groupId>
+                        <artifactId>wagon-gitsite</artifactId>
+                        <version>0.4.1</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-module-markdown</artifactId>
+                        <version>1.5</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
     </plugins>
            
   </reporting>
