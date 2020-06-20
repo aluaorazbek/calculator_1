@@ -74,7 +74,7 @@
     <plugins>
        <plugin>
          <artifactId>maven-site-plugin</artifactId>
-         <version>3.4</version>
+         <version>3.7.1</version>
          <dependencies>
            <dependency>
                <groupId>com.github.stephenc.wagon</groupId>
